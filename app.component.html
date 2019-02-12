@@ -1,0 +1,115 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <mat-toolbar color="primary"> -->
+<!-- 
+  <mat-toolbar-row>
+    <span>Hackathon</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">favorite</mat-icon>
+    <mat-icon class="example-icon">delete</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar> -->
+
+<!-- <mat-card>
+  <p>
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+  </p>
+
+</mat-card> -->
+
+<!-- <mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card> -->
+<div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Cognizant Outreach</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Administration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Generate Report</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="row mt-4 counts"></div>
+<div class="row mt-5 mb-2 counts">
+    <div class="col-sm-12 col-md-3 mb-2">
+        <mat-card>
+          <div class="circle">
+            <span>2502</span>
+          </div>
+          <div style="font-weight: bolder;text-align: center"><span>Volunteers</span></div>
+        </mat-card>
+    </div>
+    <div class="col-sm-12 col-md-3 mb-2">
+        <mat-card>
+            <div class="circle">
+              <span>43256</span>
+            </div>
+            <div style="font-weight: bolder;text-align: center"><span>Volunteering Hours</span></div>
+            
+          </mat-card>
+    </div>
+    <div class="col-sm-12 col-md-3 mb-2">
+        <mat-card>
+            <div class="circle">
+              <span>72</span>
+            </div>
+            <div style="font-weight: bolder;text-align: center"><span>Outreach events</span></div>
+          </mat-card>
+    </div>
+    <div class="col-sm-12 col-md-3 mb-2">
+        <mat-card>
+            <div class="circle">
+              <span>7</span>
+            </div>
+            <div style="font-weight: bolder;text-align: center"><span>Countries</span></div>
+          </mat-card>
+    </div>
+</div>
+
+<div class="row counts">
+    <div class="col-md-4 col-sm-12">
+        <canvas #canvas width="400" height="400">{{ chart }}</canvas>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <canvas #canvas1 width="400" height="400">{{ chart1 }}</canvas>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <canvas #canvas2 width="400" height="400">{{ chart2 }}</canvas>
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>
